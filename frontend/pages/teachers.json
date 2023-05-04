@@ -1,0 +1,112 @@
+[
+    {
+      "name": "Akshay Gupta",
+      "avatar": "..images/image/Akshay_Gupta.jpeg",
+      "subject":  "Mathematics",
+      "experience": "5 Years",
+      "qualification": "PG in Mathematics",
+      "email":"Akshyagupta@gmail.com",
+      "mobno":7008057488
+     },
+    {
+        "name": "Bishal Samanta",
+        "avatar": "./image/Bishal_Samanta.png",
+        "subject":  "Physics",
+        "experience": "4 Years",
+        "qualification": "PhD in Physics",
+        "email":"Bishalsamanata@gmail.com",
+        "mobno":9938733310
+     },
+     
+    {
+        "name": "Bivek Rai",
+        "avatar": "./image/Bivek_Rai.jpg",
+        "subject":  "Chemistry",
+        "experience": "3 Years",
+        "qualification": "PhD in Chemistry",
+        "email":"Bivekrai@gmail.com",
+        "mobno":7377130766
+     },
+     {
+        "name": "Gohil Gautam",
+        "avatar": "./image/Gohil_gautam.png",
+        "subject":  "English",
+        "experience": "4 Years",
+        "qualification": "MA in English",
+        "email":"Gohilgautam@gmail.com",
+        "mobno":7377073777
+     },
+     {
+        "name": "Mahesh Shiva",
+        "avatar": "./image/Mahesh_Shiva.png",
+        "subject":  "Zoology",
+        "experience": "4 Years",
+        "qualification": "PhD in Zoology",
+        "email":"Maheshshiva@gmail.com",
+        "mobno":9938733301
+     },
+     {
+        "name": "Naved Sharma",
+        "avatar": "./image/Naved.png",
+        "subject":  "Botany",
+        "experience": "5 Years",
+        "qualification": "PG in Botany",
+        "email":"Navedsharma@gmail.com",
+        "mobno":7008057498
+     },
+     {
+        "name": "Rahul Kumar",
+        "avatar": "./image/Rahul_kumar.png",
+        "subject":  "Physics",
+        "experience": "7 Years",
+        "qualification": "PhD in Physics",
+        "email":"Rahulkumar@gmail.com",
+        "mobno":9938737713
+     },
+     {
+        "name": "Rahul Rajeevan",
+        "avatar": "./image/Rahul_Rajeevan.png",
+        "subject":  "English",
+        "experience": "5 Years",
+        "qualification": "MA in English",
+        "email":"Rahulrajeevan@gmail.com",
+        "mobno":7377130777
+     },
+     {
+        "name": "Safal Ali Khan",
+        "avatar": "./image/Safal_Ali_Khan.jpg",
+        "subject":  "Mathematics",
+        "experience": "5 Years",
+        "qualification": "PhD in Mathematics",
+        "email":"safalalikhan@gmail.com",
+        "mobno": 7008057488
+     },
+     {
+        "name": "Sheelu Kumar",
+        "avatar": "./image/Sheelu_kumar.png",
+        "subject":  "Chemistry",
+        "experience": "5 Years",
+        "qualification": "PhD in Chemistry",
+        "email":"Sheelukumar@gmail.com",
+        "mobno":7008057498
+     },
+     {
+        "name": "Huzaifa Sheikh",
+        "avatar": "./image/Huzaifa_sheikh.png",
+        "subject":  "Botany",
+        "experience": "4 Years",
+        "qualification": "PhD in Botany",
+        "email":"Huzairsheikh@gmail.com",
+        "mobno":9938737713
+     },
+     {
+        "name": "Vaibhav Sultane",
+        "avatar": "./image/Vaibhav_Sultane.jpg",
+        "subject":  "Physics",
+        "experience": "8 Years",
+        "qualification": "PhD in Physics",
+        "email":"Vaibhavsultane@gmail.com",
+        "mobno": 9938733301
+     }
+    
+]
