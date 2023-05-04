@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div id="main">
+        
+    </div>
+</body>
+</html>
+<script>
+    let details=JSON.parse(localStorage.getItem("profile"));
+    document.querySelector("#").setAttribute("src",details.avatar);
+    document.querySelector("#").innerText=details.name;
+    document.querySelector("#").innerText="Subject:-"+details.subject;
+    document.querySelector("#").innerText="Experience:-"+details.experience;
+    document.querySelector("#").innerText="Qualification:-"+details.qualification;
+    document.querySelector("#").innerText="Email:-"+details.email;
+    document.querySelector("#").innerText="Phone No:-"+details.qualification;
+</script>
