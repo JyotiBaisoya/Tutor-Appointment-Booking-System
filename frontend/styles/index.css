@@ -1,12 +1,17 @@
 #logo {
+   
   width: 75px;
   height: 40px;
   border-radius: 22px;
 }
+/* #nav>div:nth-child(1){
+ border:0px solid black;
+ width:50%;
+
+} */
 #nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 7px;
+  display: flex;
+  justify-content: space-between;
   /* background-color: #dedede; */
   border: 0px solid black;
   width: 85%;
@@ -14,16 +19,22 @@
   margin: auto;
   padding: 13px;
 }
+#nav>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
 body {
   /* width: 90%; */
   border: 0px solid red;
   margin: auto;
+  font-family: sans-serif;
 }
 #navBtn {
   width: 70%;
   /* height: 50px; */
   border-radius: 7px;
-  background-color: #F8C471 ;
+  background-color: #f39c12 ;
   border: 0px solid green;
   color: white;
   font-size: 14px;
@@ -36,8 +47,9 @@ body {
   height: auto;
   padding: 11px;
   padding-bottom: 7%;
-  /* background-color: #225A6F; */
-  background-image: linear-gradient(cadetblue, pink);
+  /* background-color: #90d1e9; */
+  
+  background-image: linear-gradient(rgb(41, 81, 82), rgb(213, 162, 171));
 }
 
 #find{
@@ -209,4 +221,109 @@ margin:auto;
 #eigth{
     margin-top: 10%;
     border:0px solid blue
+}
+#frequently{
+    border:0px solid red;
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+#questions{
+    border:0px solid red;
+    font-family:sans-serif;
+    width:60%;
+    margin:auto;
+    text-align: center;
+
+}
+#questions>div{
+    border:0px solid rgb(179, 0, 255);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding:7px;
+    margin-top: 5px;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+#footer1{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    border:0px solid black;
+    margin-top: 2%;
+    width:98%;
+    margin:auto;
+    text-align: center;
+    background-color: #e8f2f5;
+    padding:10px;
+}
+#footer1 h3{
+    color:teal;
+}
+
+#footer1 p{
+    color:grey;
+}
+#footerMain{
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    background-color: #345b6f;
+    border:0px solid black;
+    color:white;
+}
+#footerMain>div{
+    border:0px solid red;
+    text-align: center;
+}
+
+#FooterLogo{
+    width:100%;
+   
+}
+#footerMain>div:nth-child(1) {
+    border:0px solid blue;
+    
+}
+
+#footerMain>div:nth-child(1) div:nth-child(1){
+    border:0px solid green
+}
+#icons {
+    padding:7px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:3px;
+}
+#icons img{
+    width:80%;
+}
+h1{
+    font-family: sans-serif;
+}
+
+
+/* hover styling */
+
+#topForm:hover{
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#pTag:hover{
+box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+border:none;
+}
+#navBtn:hover{
+    color:black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#findd:hover{
+     color:white;
+     background-color: red;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border:1px solid white
+}
+#third:hover{
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border:1px solid red;
+
 }
