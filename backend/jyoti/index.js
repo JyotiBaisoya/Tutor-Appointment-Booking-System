@@ -2,7 +2,13 @@ const express = require("express");
 const {connection} = require("./config/db")
 const app = express();
 app.use(express.json());
-require("dotenv").config()
+require("dotenv").config();
+const {teacherRouter} = require("./routes/teacherrouter");
+const {adminRouter} = require("./routes/adminrouter");
+
+
+app.use("/teacher",teacherRouter);
+app.use("/admin",adminRouter)
 
 app.get("/",(req,res)=>{
     res.send("Working Fine")
