@@ -1,0 +1,128 @@
+#profile{
+    background-color: rgb(213, 213, 213);
+    padding-top: 1%;
+    height: 400px;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+#left{
+    text-align: center;
+}
+.name{
+    color: #00796B;
+    font-family: "Baloo 2", cursive;
+}
+.image{
+    border-radius: 100%;
+    width: 90%;
+    height: 70%;
+}
+#right{
+    height: 100%;
+    color: rgb(66, 66, 66);
+    margin-top: 3%;
+    font-family: Arial,sans-serif;
+}
+.city{
+    margin-bottom: 40px;
+}
+#btndiv{
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+#bookbtn{
+    font-size: 120%;
+    width: 70%;
+    border: none;
+    color: white;
+    background-color: rgb(41, 165, 66);
+    font-family: "Baloo 2", cursive;
+    border-radius: 5px  ;
+}
+#about>h2{
+    color: #00796B;
+    font-family: "Baloo 2", cursive;
+    margin-bottom: 30px;
+}
+#about{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 50px;
+}
+.about{
+    font-family: Arial,sans-serif
+}
+#about-h3{
+    margin: auto;
+    width: 90%;
+}
+#p-div{
+    margin: auto;
+    width: 90%;
+}
+.p1{
+    font-size: 20px;
+}
+
+#hourly-rate>h2{
+    color: #00796B;
+    font-family: "Baloo 2", cursive;
+    margin-bottom: 30px;
+}
+#hourly-rate{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 40px;
+}
+#price{
+    margin-left:5%;
+}
+#aval{
+    margin: auto;
+    width: 70%; 
+    margin-bottom: 50px;
+}
+#aval>h2{
+    color: #00796B;
+    font-family: "Baloo 2", cursive;
+    margin-bottom: 30px;
+}
+.aval-h3{
+    margin-left:5%;
+}
+
+#submit{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+}
+#sub-btn{
+        font-size: 120%;
+        width: 20%;
+        border: none;
+        color: rgb(44, 44, 44);
+        background-color: #FFC107;
+        font-family: "Baloo 2", cursive;
+        border-radius: 5px  ;
+    
+}
+
+
+@media all and (min-width:100px) and (max-width:800px){
+    #profile{
+        flex-direction: column;
+        height: 1100px;
+        text-align: center
+    }
+    #sub-btn{
+        width: 30%;
+    }
+}

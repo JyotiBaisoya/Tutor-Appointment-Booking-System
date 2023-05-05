@@ -8,40 +8,12 @@
     <link rel="stylesheet" href="../styles/teachers.css"/>
 </head>
 <body>
+    <div id="searching">
+        <input oninput="searchteacher()" class="searchteacher" placeholder="search teacher" >
+        <input oninput="searchsubject()" class="searchsubject" placeholder="search subject" >
+    </div>
     <div id="container"></div>
 </body>
 </html>
-<script>
-    let bag=[];
-    let cartitems=JSON.parse(localStorage.getItem("cartproducts")) || [];
-    fetch("teachers.json")
-    .then((res)=>res.json())
-    .then((data)=>{
-        bag=data;
-        displaycard(data);
-    });
-   
-    function displaycard(data){
-        document.querySelector("#container").innerHTML="";
-        data.forEach(function (elem){
-        let anc=document.createElement("a");
-        anc.href="teacherprofile.html";
-        let div=document.createElement("div");
-        div.addEventListener("click",function(){
-            localStorage.setItem("profile",JSON.stringify(elem));
-        });
-        let imageprod=document.createElement("img");
-        imageprod.setAttribute("src",elem.avatar);
+<script src="../scripts/teacher.js"></script>
 
-        let name=document.createElement("h2");
-        name.innerText=elem.name;
-
-        let subject=document.createElement("h3");
-        subject.innerText=elem.subject;
-
-        div.append(imageprod,name,subject);
-        anc.append(div);
-        document.querySelector("#container").append(anc);
-        });
-    }
-</script>
