@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
     <link rel="stylesheet" href="./signupAndLogin.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
   </head>
   <body>
     <div id="container">
@@ -16,20 +17,41 @@
           <div class="switchContainer">
             <div class="switchButton" id="button-container">
               <div id="stuButton" class="button-element">
-                <p id="student">Student/Parent</p>
+                <p id="student">Student</p>
               </div>
               <p id="tutor">Tutor</p>
             </div>
           </div>
           <label for="">First Name</label><br />
-          <input type="text" id="firstname" placeholder="First Name" /> <br />
+          <input type="text" id="firstname" placeholder="First Name" required />
+          <br />
           <label for="">Last Name</label><br />
-          <input type="text" id="lastname" placeholder="Last Name" /><br />
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Last Name"
+            required
+          /><br />
           <label for="">Email</label><br />
-          <input type="email" id="email" placeholder="xyz@gmail.com" /><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="xyz@gmail.com"
+            required
+          /><br />
           <label for="">Password</label><br />
-          <input type="password" id="password" placeholder="12345" /><br />
-          <input type="checkbox" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="12345"
+            required
+          /><br />
+          <input
+            type="checkbox"
+            required
+            oninvalid="this.setCustomValidity('Please agree to the Terms of Service and Privacy Policy')"
+            oninput="this.setCustomValidity('')"
+          />
           <label for=""
             >I agree to the Terms of Service and Privacy Policy</label
           ><br />
@@ -47,4 +69,5 @@
     </div>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./signup.js"></script>
