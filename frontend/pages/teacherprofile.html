@@ -5,20 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="../styles/teacherprofile.css">
 </head>
 <body>
     <div id="main">
-        
+        <div id="profile">
+            <div id="left">
+                <img class="image" alt="profile">
+                <h2 class="name"></h2>
+                <h3 class="rating">⭐⭐⭐⭐⭐ 5</h3>
+            </div>
+            <div id="right">
+                <h3 class="subject"></h3>
+                <h3 class="qualifications"></h3>
+                <h3 class="experience"></h3>
+                <h3 class="email"></h3>
+                <h3 class="phoneNo"></h3>
+                <h3 class="city"></h3>
+                <div id="btndiv"><button id="bookbtn">Book Slot</button></div>
+            </div>
+        </div>
+        <div id="about">
+            <h2>About Me</h2>
+            <div id="about-h3">
+                <h3 class="about"></h3>
+            </div>
+            <div id="p-div">
+                <p class="p1">My approach to tutoring is centered around empowering my students to think critically and approach their studies with confidence.
+                    I believe in tailoring my teaching style to meet your individual needs, whether that means providing step-by-step guidance or encouraging you to find your own solutions. 
+                   My ultimate goal for each student is to have the confidence and understanding to approach their studies with independence and achieve success.</p>
+            </div>
+        </div>
+        <div id="hourly-rate">
+            <h2>Hourly Rate</h2>
+            <div id="price">
+                <h3>In-person, 1-on-1 rate :- ₹1000.00</h3>
+                <h3>In-person, group rate :- ₹600.00</h3>
+                <h3>Online, 1-on-1 rate :- ₹800.00</h3>
+            </div>
+        </div>
+        <div id="aval">
+            <h2>Availability</h2>
+            <div class="aval-av">
+                <h3 class="aval-h3">Monday, 3:00 PM - 5:00 PM</h3>
+                <h3 class="aval-h3">Tuesday, 3:00 PM - 8:00 PM</p>
+                <h3 class="aval-h3">Friday, 3:00 PM - 8:00 PM</p>
+                <h3 class="aval-h3">Sunday, 1:00 PM - 8:00 PM</p>
+            </div>
+        </div>
+        <div id="submit">
+            <button id="sub-btn">Submit a review</button>
+        </div>
     </div>
 </body>
 </html>
 <script>
     let details=JSON.parse(localStorage.getItem("profile"));
-    document.querySelector("#").setAttribute("src",details.avatar);
-    document.querySelector("#").innerText=details.name;
-    document.querySelector("#").innerText="Subject:-"+details.subject;
-    document.querySelector("#").innerText="Experience:-"+details.experience;
-    document.querySelector("#").innerText="Qualification:-"+details.qualification;
-    document.querySelector("#").innerText="Email:-"+details.email;
-    document.querySelector("#").innerText="Phone No:-"+details.qualification;
+    document.querySelector(".image").setAttribute("src",details.image);
+    document.querySelector(".name").innerText=details.teacherName;
+    document.querySelector(".subject").innerText="Subject : - "+details.subject;
+    document.querySelector(".experience").innerText="Experience : - "+details.experience;
+    document.querySelector(".qualifications").innerText="Qualification : - "+details.qualifications;
+    document.querySelector(".email").innerText="Email : - "+details.email;
+    document.querySelector(".phoneNo").innerText="Phone No : - "+details.phoneNo;
+    document.querySelector(".city").innerText="City : - "+details.city;
+    document.querySelector(".about").innerText=details.about;
+    document.querySelector("#bookbtn").addEventListener("click",function(){
+            window.location.href="../pages/teachers.html";
+        });
 </script>

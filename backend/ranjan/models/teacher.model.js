@@ -9,6 +9,7 @@ const teacherSchema = mongoose.Schema({
     city: {type: String,required: true,},
     subject: {type: String,required: true,},
     image: {type: String,},
+    about:{type: String},
   },{versionKey:false});
   
   const TeacherModel = mongoose.model("Teachers", teacherSchema);

@@ -20,6 +20,7 @@ teacherRouter.get("/allteacher", async (req, res) => {
       city,
       subject,
       image,
+      about,
     } = req.body;
     try {
       let teacher = new TeacherModel({
@@ -31,6 +32,7 @@ teacherRouter.get("/allteacher", async (req, res) => {
         city,
         subject,
         image,
+        about,
       });
       await teacher.save();
       res.status(201).send({ msg: "teacher has been created", teacher });
