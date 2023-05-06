@@ -68,8 +68,13 @@ form input:focus {
 #loginPageDiv > a {
   text-decoration: none;
 }
-form>h1{
-    margin-bottom: 30px;
+form > h1 {
+  margin-bottom: 30px;
+}
+#forgotPassA {
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
 }
 /* switch button */
 .switchButton {
