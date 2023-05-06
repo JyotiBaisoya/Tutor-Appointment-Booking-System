@@ -1,0 +1,87 @@
+#main{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 400px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 5%;
+    margin-top: 50px;
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5%;
+}
+#input{
+    height: 60%;
+    width: 70%;
+    text-align:center;
+    border: 5px solid rgb(198, 198, 198);
+    border-radius: 10px;
+    font-family: "Baloo 2", cursive;
+    outline: none;
+}
+#btn{
+    font-size: 120%;
+        width: 30%;
+        height: 40px;
+        border: none;
+        color: rgb(44, 44, 44);
+        background-color: #FFC107;
+        font-family: "Baloo 2", cursive;
+        border-radius: 5px;
+        margin-top: 50px;
+}
+
+/* -----------------pop-up-------------- */
+
+.popup {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 280px;
+    left: 50%;
+    margin-left: -150px;
+    height: 180px;
+    top: 50%;
+    margin-top: -100px;
+    background: #FFF;
+    border: 3px solid #ffffff;
+    z-index: 20;
+    text-align: center;
+    border-color: white ;
+    border-radius: 10%;
+  }
+
+  
+  #popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+  }
+  
+  #popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+  }
+  #popup>h2{
+    font-family: "Baloo 2", cursive;
+  }
+  #popup>a{
+    border: 3px solid green;
+    padding: 3px;
+    font-family: "Baloo 2", cursive;
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+  }
