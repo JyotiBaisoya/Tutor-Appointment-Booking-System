@@ -63,8 +63,8 @@ teacherRouter.patch("/update/:id",async(req,res)=>{
     }
 })
 
-teacherRouter.delete("/delete/:id",async(req,res)=>{
-    const id = req.params.id;
+teacherRouter.delete("/delete",async(req,res)=>{
+    const id = req.query.id;
     try {
         await TeachModel.findByIdAndDelete({_id:id});
         res.send("deleted")
@@ -73,4 +73,16 @@ teacherRouter.delete("/delete/:id",async(req,res)=>{
     }
 });
  
+
+doctorRouter.get("/getteacherID",async(req,res)=>{
+    try { 
+            let name=req.headers.name;
+            let user=await TeachModel.findOne({"name":name})
+            res.send({"ID":user._id})
+
+    } catch (error) {
+        console.log({"Error":error.message});
+        res.send({"Error":error.message});
+    }   
+})
 module.exports={teacherRouter}
