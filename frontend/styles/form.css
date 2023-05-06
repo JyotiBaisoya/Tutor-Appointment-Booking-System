@@ -1,0 +1,192 @@
+#hamburger,#hamBtn{
+    display:none;
+}
+
+
+#logo {
+   
+  width: 75px;
+  height: 40px;
+  border-radius: 22px;
+}
+/* #nav>div:nth-child(1){
+ border:0px solid black;
+ width:50%;
+
+} */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1311119a;
+  border: 0px solid black;
+  width: 100%;
+
+  margin: auto;
+  padding: 13px;
+}
+#nav>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
+body {
+  /* width: 90%; */
+  border: 0px solid red;
+  margin: auto;
+  font-family: sans-serif;
+}
+#navBtn {
+  width: 70%;
+  /* height: 50px; */
+  border-radius: 7px;
+  background-color: #f39c12 ;
+  border: 0px solid green;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: bold;
+}
+
+
+#formDiv{
+  box-shadow: rgba(16, 214, 178, 0.4) 0px 0px 0px 2px, rgba(72, 209, 22, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    width:25%;
+    padding:15px;
+    margin-left: 5%;
+    font-family: sans-serif;
+    margin-top: 2%;
+    font-size: larger;
+     border-radius: 7px;
+     
+}
+input{
+    margin-bottom: 3%;
+    padding: 7px;
+    width:80%;
+    border: 2px solid teal;
+    border-radius: 7px;
+    color:blue;
+    font-weight: bold;
+    font-style:normal;
+    line-height: 18px;
+    font-size: 15px;
+  margin-top: 8px;
+}
+label{
+    margin-right: 4%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+
+}
+#parent{
+    display:flex;
+    justify-content: space-around;
+}
+
+#footerMain{
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:5px;
+    background-color: #345b6f;
+    border:0px solid black;
+    color:white;
+}
+#footerMain>div{
+    border:0px solid red;
+    text-align: center;
+}
+
+#FooterLogo{
+    width:100%;
+   
+}
+#footerMain>div:nth-child(1) {
+    border:0px solid blue;
+    
+}
+
+#footerMain>div:nth-child(1) div:nth-child(1){
+    border:0px solid green
+}
+#icons {
+    padding:7px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:3px;
+}
+#icons img{
+    width:80%;
+}
+
+@media all and (min-width:320px) and (max-width:780px){
+    #parent{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+    #formDiv{
+        width:50%
+    }
+    #nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+   }
+  #nav>div:nth-child(2){
+    display:none;
+   }
+   #hamburger{
+
+    display:block;
+   }
+   #hamburger:hover #hamBtn{
+display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+   }
+   #hamBtn button{
+    width:100%
+   }
+}
+
+
+@media all and (min-width:780px) and (max-width:1500px){
+    #parent{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #formDiv{
+        width:50%
+    }
+    #nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+   }
+  #nav>div:nth-child(2){
+    display:none;
+   }
+   #hamburger{
+
+    display:block;
+   }
+   #hamburger:hover #hamBtn{
+display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+   }
+   #hamBtn button{
+    width:100%
+   }
+}
