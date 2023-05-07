@@ -8,6 +8,7 @@
 }
 #container > img {
   width: 40%;
+  height: 745px;
 }
 #signup_main_Div {
   width: 60%;
@@ -24,7 +25,7 @@ form {
   margin: auto;
   width: 45%;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 50px;
   border: 1px solid rgb(224, 224, 224);
 }
 form label {
@@ -58,6 +59,10 @@ form input:focus {
   margin-top: 20px;
   font-size: 20px;
   border-radius: 5px;
+  cursor: pointer;
+}
+#signupBtn:hover {
+  filter: brightness(110%);
 }
 #loginPageDiv {
   display: flex;
