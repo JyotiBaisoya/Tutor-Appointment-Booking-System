@@ -67,11 +67,13 @@
     border-radius: 5px;
     border: 3px solid gray;
     width: 40%;
+    outline: none;
 }
 .searchsubject{
     border-radius: 5px;
     border: 3px solid gray;
     width: 40%;
+    outline: none;
 }
 
 /* ----------------------------responsive--------------------- */

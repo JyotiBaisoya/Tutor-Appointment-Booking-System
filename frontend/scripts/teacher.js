@@ -1,5 +1,5 @@
 
-let baseurl="http://localhost:8080/teacher/allteacher";
+let baseurl="http://localhost:5501/teacher/allteacher";
 
 let bag=[];
 
@@ -65,7 +65,7 @@ let bag=[];
         btn2.setAttribute("class","slotbook-btn");
         btn2.innerText="Book Slot";
         btn2.addEventListener("click",function(){
-            window.location.href="../pages/teacherprofile.html";
+            window.location.href="../pages/appointment.html";
         })
         btndiv.append(btn1,btn2)
         div.append(imageprod,name,subject,btndiv);
