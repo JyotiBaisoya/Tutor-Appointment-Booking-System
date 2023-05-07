@@ -93,17 +93,17 @@ userRoute.post("/otp", async (req, res) => {
       // let body = `This is Your OTP - ${otp} for resetting the API ACE password, Keep it confedential.`;
       // sendMail(sub, body, email);
       res.send({
-        ok: true,
         message: otp,
       });
     } else {
+      res.status(400);
       res.send({
         message: "Incorrect E-Mail",
       });
     }
   } catch (error) {
     console.log(error);
-    res.status(400);
+    res.status(402);
     res.send("something went wrong while sending otp");
   }
 });
@@ -112,10 +112,10 @@ userRoute.patch("/reset", async (req, res) => {
   try {
     const payload = req.body;
 
-    const email = payload.email;
+    const _id = payload.id;
     const password = payload.password;
 
-    const userData = await userModel.find({ email });
+    const userData = await userModel.find({ _id });
 
     if (userData.length > 0) {
       const ID = userData[0]._id;
@@ -128,7 +128,8 @@ userRoute.patch("/reset", async (req, res) => {
         });
       });
     } else {
-      res.send({ message: "Incorrect Email" });
+      res.status(400);
+      res.send({ message: "something went wrong" });
     }
   } catch (error) {
     console.log(error);
