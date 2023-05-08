@@ -210,9 +210,9 @@ margin:auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #fourthImg{
-    width:30px;
+    width:100%;
     border:0px solid red;
-    height:5%;
+    /* height:5%; */
 }
 .fifth{
     border:1px solid black;
