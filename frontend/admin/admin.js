@@ -1,3 +1,39 @@
+let show=document.getElementById("after-nav-col-1");
+
+let role = localStorage.getItem("role")
+if(role=="admin"){
+  show.innerHTML=
+  `
+  
+      <div class="row">
+          <a><h2>Dashboard</h2></a>
+      </div>
+     
+     <div class="row">
+      <a href="./appointment.html"> <h2>All Appointments</h2></a>   
+      </div>
+      <div class="row">
+          <a href="./addteacher.html"><h2>Add Teacher</h2></a>    
+      </div>
+      <div class="row">
+          <a href=""> <h2>Remove Teacher</h2></a>
+  `
+  
+}else if(role=="tutor"){
+  show.innerHTML=
+` <div class="row">
+        <a><h2>Dashboard</h2></a>
+    </div>
+   
+   <div class="row">
+    <a href="./appointment.html"> <h2>Show Appointments</h2></a>   
+    </div>
+   
+`
+
+}
+
+
 
 let Dat ;
 async function getData() {
@@ -56,7 +92,7 @@ function searchteacher(){
     let q=document.querySelector(".searchteacher").value;
     
     let newdata=Dat.filter(function(elem){
-        return elem.qualification.toLowerCase().includes(q.toLocaleLowerCase());
+        return elem.name.toLowerCase().includes(q.toLocaleLowerCase());
     });
   console.log(newdata)
     showTeacher(newdata);
