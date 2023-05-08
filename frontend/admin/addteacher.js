@@ -25,7 +25,8 @@ async function addDoctor(obj){
         body:JSON.stringify(obj)
        })
        if(adding_rqst.ok){
-        alert("added successfully")
+        Swal.fire("Teacher Added Successfully")
+       
         
     }
 

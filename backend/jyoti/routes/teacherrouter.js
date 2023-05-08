@@ -63,18 +63,23 @@ teacherRouter.patch("/update/:id",async(req,res)=>{
     }
 })
 
+
+
 teacherRouter.delete("/delete",async(req,res)=>{
-    const id = req.query.id;
     try {
-        await TeachModel.findByIdAndDelete({_id:id});
-        res.send("deleted")
+        let id=req.query.id;
+        let user=await TeachModel.findByIdAndDelete({_id:id});
+        res.send({"mess":"Teacher Deleted"})
     } catch (error) {
-        res.send({"error":error.message})
+        res.send({"Error":error.message})
     }
-});
+
+})
+
+
  
 
-doctorRouter.get("/getteacherID",async(req,res)=>{
+teacherRouter.get("/getteacherID",async(req,res)=>{
     try { 
             let name=req.headers.name;
             let user=await TeachModel.findOne({"name":name})

@@ -7,7 +7,7 @@
 #after-nav-col-1{
     width:20%;
         
-    background-color:rgb(79, 79, 196);
+    background-color:rgb(52,91,111);
     
     height:100%;
     color: rgb(242, 225, 225);
@@ -68,7 +68,7 @@ a{
     text-align: center;
 }
 table{
-    border:2px solid rgba(89, 79, 234, 1);
+    border:2px solid rgba(52,91,111);
     width:60%;
     margin-top: 5%;
     margin-left:10%;
@@ -107,7 +107,7 @@ td,th{
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: left;
-    background-color: rgba(89, 79, 234, 1);
+    background-color: rgba(52,91,111);
     color: white;
     padding: 18px;
 }
@@ -137,7 +137,7 @@ form {
     flex-direction: column;
 
     padding: 20px;
-    background-color: rgb(79, 79, 196);
+    background-color: rgb(52,91,111);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
