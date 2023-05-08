@@ -19,8 +19,10 @@
   justify-content: space-between;
   /* background-color: #dedede; */
   border: 0px solid black;
-  width: 85%;
-
+  width: 90%;
+/* position: sticky;
+top:0%;
+z-index: 2; */
   margin: auto;
   padding: 13px;
 }
@@ -35,9 +37,14 @@ body {
   margin: auto;
   font-family: sans-serif;
 }
+#navbtnDiv {
+    border:0px solid red;
+    width:30%
+}
 #navBtn {
-  width: 70%;
+  width: 80%;
   /* height: 50px; */
+ 
   border-radius: 7px;
   background-color: #f39c12 ;
   border: 0px solid green;
@@ -302,7 +309,7 @@ margin:auto;
 }
 #icons img{
     width:80%;
-}7
+}
 h1{
     font-family: sans-serif;
 }
@@ -318,7 +325,7 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 border:none;
 }
 #navBtn:hover{
-    color:black;
+   filter:brightness(110%);
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 #findd:hover{
