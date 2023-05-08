@@ -1,5 +1,5 @@
 
-let baseurl="http://localhost:5501/teacher/allteacher";
+let baseurl="http://localhost:4500/teacher/allteacher";
 
 let bag=[];
 
