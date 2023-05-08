@@ -6,6 +6,7 @@ const port = process.env.port;
 const { connection } = require("./config/config");
 const { userRoute } = require("./route/user.route");
 const { authenticate } = require("./middleware/authenticate.middleware");
+const { teacherRouter } = require("./route/teacher.router");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 app.use(userRoute);
 app.use(authenticate);
+app.use("/teacher", teacherRouter);
 
 app.listen(port, async () => {
   try {
