@@ -20,7 +20,7 @@
             <div id="right">
                 <form id="form"action="">
                     <h2>Choose a date</h2>
-                    <input id="date"class="date-time"type="date">
+                    <input name="setTodaysDate" id="date"class="date-time"type="date">
                     <h2>Choose time slot</h2>
                     <select id="time" class="date-time" name="">
                         <option class="option"value="9AM-11AM">9AM-11AM</option>
@@ -37,3 +37,9 @@
 </body>
 </html>
 <script src="../scripts/appointment.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
+    }
+</script> 
