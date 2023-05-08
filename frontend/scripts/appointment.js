@@ -3,6 +3,14 @@ document.querySelector(".image").setAttribute("src", details.image);
 document.querySelector(".name").innerText = details.teacherName;
 document.querySelector(".subject").innerText = "Subject : - " + details.subject;
 
+// ------calender-disable-past-date-------
+window.onload=function(){
+  var today = new Date().toISOString().split('T')[0];
+  document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
+  }
+
+  
+
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
