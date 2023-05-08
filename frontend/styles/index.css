@@ -2,28 +2,20 @@
     display:none;
 }
 
-
 #logo {
    
   width: 75px;
   height: 40px;
   border-radius: 22px;
 }
-/* #nav>div:nth-child(1){
- border:0px solid black;
- width:50%;
 
-} */
 #nav {
   display: flex;
   justify-content: space-between;
   /* background-color: #dedede; */
   border: 0px solid black;
   width: 90%;
-/* position: sticky;
-top:0%;
-z-index: 2; */
-  margin: auto;
+margin: auto;
   padding: 13px;
 }
 #nav>div:nth-child(2){
