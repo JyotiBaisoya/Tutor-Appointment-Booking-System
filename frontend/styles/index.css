@@ -39,10 +39,22 @@ body {
 }
 #navbtnDiv {
     border:0px solid red;
-    width:30%
+    width:40%;
+ color:white;
 }
+#navbtnDiv a{
+    border:0px solid green;
+    color:white;
+    text-decoration: none;
+}
+/* #navbtnDiv>a{
+border:1px solid green;
+display:inline-block;
+} */
 #navBtn {
   width: 80%;
+  color:white;
+  border:1px solid rgb(4, 0, 255);
   /* height: 50px; */
  
   border-radius: 7px;
