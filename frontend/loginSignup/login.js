@@ -27,9 +27,16 @@ async function login(payload) {
     localStorage.setItem("userID", data.userID);
     localStorage.setItem("username", data.username);
     localStorage.setItem("token", data.token);
-    setTimeout(() => {
-      window.location.href = "../index.html";
-    }, "2000");
+    localStorage.setItem("role", data.role);
+    if (data.role == "student") {
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, "2000");
+    } else {
+      setTimeout(() => {
+        window.location.href = "../admin/admin.html";
+      }, "2000");
+    }
   } else {
     Swal.fire("Wrong Credentials ❌");
   }
