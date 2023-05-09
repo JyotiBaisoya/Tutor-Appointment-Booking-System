@@ -37,6 +37,7 @@ userRoute.post("/user/signup", async (req, res) => {
 userRoute.post("/user/login", async (req, res) => {
   const { email, password } = req.body;
   let userData = await userModel.find({ email });
+  console.log(userData);
   if (userData.length > 0) {
     bcrypt.compare(password, userData[0].password, function (err, result) {
       if (result) {
@@ -62,6 +63,7 @@ userRoute.post("/user/login", async (req, res) => {
           username: userData[0].name,
           userID: userData[0]._id,
           role: userData[0].role,
+          email: userData[0].email,
         });
       } else {
         res.status(400);

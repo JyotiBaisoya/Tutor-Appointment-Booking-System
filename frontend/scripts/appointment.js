@@ -4,12 +4,10 @@ document.querySelector(".name").innerText = details.teacherName;
 document.querySelector(".subject").innerText = "Subject : - " + details.subject;
 
 // ------calender-disable-past-date-------
-window.onload=function(){
-  var today = new Date().toISOString().split('T')[0];
-  document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
-  }
-
-  
+window.onload = function () {
+  var today = new Date().toISOString().split("T")[0];
+  document.getElementsByName("setTodaysDate")[0].setAttribute("min", today);
+};
 
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
@@ -20,14 +18,15 @@ form.addEventListener("submit", (e) => {
 });
 
 async function bookSlot(date, time) {
-  let teacherID = JSON.parse(localStorage.getItem("profile"))._id;
-  let studentID = localStorage.getItem("userID");
-  let obj = { teacherID, studentID, date, time };
+  let teacherEmailID = JSON.parse(localStorage.getItem("profile")).email;
+  let studentID = localStorage.getItem("studentID");
+  let obj = { teacherEmailID, studentID, date, time };
 
-  let addSlot = await fetch("http://localhost:4500/teacher/bookSlot", {
-    method: "PATCH",
+  let addSlot = await fetch("http://localhost:4500/bookSlots", {
+    method: "POST",
     headers: {
       "Content-type": "application/json",
+      Authorization: localStorage.getItem("token"),
     },
     body: JSON.stringify(obj),
   });
