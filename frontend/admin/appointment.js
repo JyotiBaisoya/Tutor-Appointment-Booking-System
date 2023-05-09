@@ -6,7 +6,7 @@ async function getData() {
   
  
       try {
-          let res = await fetch("http://localhost:4500/allSlots", {
+          let res = await fetch("https://alert-lime-bracelet.cyclic.app/allSlots", {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",

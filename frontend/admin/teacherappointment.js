@@ -8,7 +8,7 @@ async function getData() {
   
  
       try {
-          let res = await fetch(`http://localhost:4500/teacherSlots/${email}`, {
+          let res = await fetch(`https://alert-lime-bracelet.cyclic.app/teacherSlots/${email}`, {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",
@@ -86,7 +86,7 @@ let all_accept_btns = document.querySelectorAll(".accept")
 }
 
    function accept(id){
-    fetch(`http://localhost:4500/update/${id}`,{
+    fetch(`https://alert-lime-bracelet.cyclic.app/update/${id}`,{
         method:"PATCH",
         headers:{
           "Content-Type": "application/json",
@@ -104,7 +104,7 @@ let all_accept_btns = document.querySelectorAll(".accept")
     })
   }
   function reject(id){
-    fetch(`http://localhost:4500/update/${id}`,{
+    fetch(`https://alert-lime-bracelet.cyclic.app/update/${id}`,{
         method:"PATCH",
         headers:{
           "Content-Type": "application/json",

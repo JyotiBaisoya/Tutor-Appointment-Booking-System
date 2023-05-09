@@ -1,4 +1,4 @@
-let baseurl = "http://localhost:4500/teacher/allteacher";
+let baseurl = "https://alert-lime-bracelet.cyclic.app/teacher/allteacher";
 
 let bag = [];
 

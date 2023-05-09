@@ -17,7 +17,7 @@ btn.addEventListener("click",(event)=>{
 async function addDoctor(obj){
     try {
         console.log(obj)
-       let adding_rqst=await fetch("http://localhost:4500/teacher/add",{
+       let adding_rqst=await fetch("https://alert-lime-bracelet.cyclic.app/teacher/add",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
