@@ -1,112 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../styles/review.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/review.css" />
+  </head>
+  <body>
     <div id="nav">
-        <div><a href="../index.html"><img src="../images/learnmate-logo.png" alt="" id="logo"></a></div>
-        <div id="navbtnDiv">
-<button id="navBtn"><a href="./pages/teachers.html">Become a Tutor</a>
-
-</button>
-
-            
-            <button id="navBtn">Schedules</button>
-            <button id="navBtn"><a href="../loginSignup/login.html">Become a Tutor</a>
-               
-            </button>
-
-            <button id="navBtn"><a href="../loginSignup/login.html">SignIn</a>
-            
-            </button>
-
-            
-        </div>
-
-        <div id="hamburger"><img src="../images/menus.png" alt="">
-            <div id="hamBtn"><button id="navBtn">For Students</button>
-                <button id="navBtn">For Tutors</button>
-                <button id="navBtn">
-                    Become a Tutor
-                </button>
-                <button id="navBtn">SignIn</button>
-            </div>
-        </div>
+      <!-- navContent -->
     </div>
 
-<!-- ---------------navbar-end------------- -->
+    <!-- ---------------navbar-end------------- -->
     <div id="main">
-        <input id="input" type="text" placeholder="Write your review">
-        <button class="button"id="btn" onclick="show('popup')">Submit</button>
-        <div class="popup" id="popup">
-            <i class="fa fa-check-circle" style="font-size:70px;color:rgb(0, 255, 60)"></i>
-            <h2>Review submitted</h2>
-            <a href="./teacherprofile.html" onclick="hide('popup')">OK</a>
-          </div>
+      <input id="input" type="text" placeholder="Write your review" />
+      <button class="button" id="btn" onclick="show('popup')">Submit</button>
+      <div class="popup" id="popup">
+        <i
+          class="fa fa-check-circle"
+          style="font-size: 70px; color: rgb(0, 255, 60)"
+        ></i>
+        <h2>Review submitted</h2>
+        <a href="./teacherprofile.html" onclick="hide('popup')">OK</a>
+      </div>
     </div>
     <!-- ------------------footer----------- -->
     <div id="footerMain">
-        <!-- logo icons -->
+      <!-- logo icons -->
+      <div>
         <div>
-            <div><img id="FooterLogo" src="../images/learnmate-logo-(blue).png" alt=""></div>
-            <div id="icons">
-                <div><img src="../images/facebook.png" alt=""></div>
-                <div><img src="../images/instagram.png" alt=""></div>
-                <div><img src="../images/pinterest (1).png" alt=""></div>
-                <div><img src="../images/twitter.png" alt=""></div>
-                <div><img src="../images/youtube.png" alt=""></div>
-            </div>
+          <img
+            id="FooterLogo"
+            src="../images/learnmate-logo-(blue).png"
+            alt=""
+          />
         </div>
-        <!-- 2nd div -->
-        <div>
-            <h3>General Links</h3>
-            <p>Search</p>
-            <p>About us</p>
-            <p>Accreditations</p>
-            <p>Blog</p>
-            <p>Contact Us</p>
+        <div id="icons">
+          <div><img src="../images/facebook.png" alt="" /></div>
+          <div><img src="../images/instagram.png" alt="" /></div>
+          <div><img src="../images/pinterest (1).png" alt="" /></div>
+          <div><img src="../images/twitter.png" alt="" /></div>
+          <div><img src="../images/youtube.png" alt="" /></div>
         </div>
-        <!-- 3rd div -->
-        <div>
-            <h3>For Parents/Students</h3>
-            <p>How it Works</p>
-            <p>Pricing</p>
-            <p>Packages</p>
-            <p>FAQs</p>
-            <p>Login</p>
-        </div>
-        <!-- 4th div -->
-        <div>
-            <h3>For Tutors</h3>
-            <p>How it Works</p>
-            <p>Pricing</p>
-            <p>Packages</p>
-            <p>FAQs</p>
-            <p>Login</p>
-        </div>
+      </div>
+      <!-- 2nd div -->
+      <div>
+        <h3>General Links</h3>
+        <p>Search</p>
+        <p>About us</p>
+        <p>Accreditations</p>
+        <p>Blog</p>
+        <p>Contact Us</p>
+      </div>
+      <!-- 3rd div -->
+      <div>
+        <h3>For Parents/Students</h3>
+        <p>How it Works</p>
+        <p>Pricing</p>
+        <p>Packages</p>
+        <p>FAQs</p>
+        <p>Login</p>
+      </div>
+      <!-- 4th div -->
+      <div>
+        <h3>For Tutors</h3>
+        <p>How it Works</p>
+        <p>Pricing</p>
+        <p>Packages</p>
+        <p>FAQs</p>
+        <p>Login</p>
+      </div>
 
-        <!-- Footer image -->
-        <div id="footerImg"><img
-                src="https://img.freepik.com/premium-photo/smiling-cute-teenage-girl-sunglasses-holding-notebook-writing-something-down-girl-blue-background-copy-space_2221-7455.jpg"
-                alt=""></div>
+      <!-- Footer image -->
+      <div id="footerImg">
+        <img
+          src="https://img.freepik.com/premium-photo/smiling-cute-teenage-girl-sunglasses-holding-notebook-writing-something-down-girl-blue-background-copy-space_2221-7455.jpg"
+          alt=""
+        />
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script>
-    $ = function(id) {
-  return document.getElementById(id);
-}
+  $ = function (id) {
+    return document.getElementById(id);
+  };
 
-var show = function(id) {
-	$(id).style.display ='block';
-}
-var hide = function(id) {
-	$(id).style.display ='none';
-}
+  var show = function (id) {
+    $(id).style.display = "block";
+  };
+  var hide = function (id) {
+    $(id).style.display = "none";
+  };
+</script>
+<script>
+  let username = localStorage.getItem("username");
+
+  let nav = document.querySelector("#nav");
+  if (username == null) {
+    nav.innerHTML = null;
+    nav.innerHTML = `<div>
+          <a href="./index.html"
+            ><img src="./learnmate-logo.png" alt="" id="logo"
+          /></a>
+        </div>
+        <div id="navbtnDiv">
+          <button id="navBtn">
+            <a href="./teachers.html">Tutors</a>
+          </button>
+
+          <button id="navBtn">Schedules</button>
+          <button id="navBtn">
+            <a href="../loginSignup/signup.html">Signup</a>
+          </button>
+
+          <button id="navBtn">
+            <a href="../loginSignup/login.html">SignIn</a>
+          </button>
+        </div>
+
+        <div id="hamburger">
+          <img src="./images/menus.png" alt="" />
+          <div id="hamBtn">
+            <button id="navBtn">
+            <a href="./teachers.html">Tutors</a>
+          </button>
+
+          <button id="navBtn">Schedules</button>
+          <button id="navBtn">
+            <a href="../loginSignup/signup.html">Signup</a>
+          </button>
+
+          <button id="navBtn">
+            <a href="../loginSignup/login.html">SignIn</a>
+          </button>
+          </div>
+        </div>`;
+  } else {
+    nav.innerHTML = null;
+    nav.innerHTML = `<div>
+          <a href="./index.html"
+            ><img src="./learnmate-logo.png" alt="" id="logo"
+          /></a>
+        </div>
+        <div id="navbtnDiv">
+          <button id="navBtn">
+            <a href="./teachers.html">Tutors</a>
+          </button>
+
+          <button id="navBtn">Schedules</button>
+          <button class="logoutBtn">Logout</button>
+        </div>
+
+        <div id="hamburger">
+          <img src="./images/menus.png" alt="" />
+          <div id="hamBtn">
+            <button id="navBtn">
+              <a href="./teachers.html">Tutors</a>
+            </button>
+
+            <button id="navBtn">Schedules</button>
+            <button class="logoutBtn">Logout</button>
+          </div>
+        </div>`;
+
+    let logoutBtn = document.querySelector(".logoutBtn");
+    logoutBtn.addEventListener("click", () => {
+      localStorage.removeItem("username");
+      window.location.href = "../index.html";
+    });
+  }
 </script>

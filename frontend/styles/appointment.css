@@ -258,3 +258,18 @@ display:inline-block;
 #icons img{
     width:80%;
 }
+.logoutBtn{
+    width: 80%;
+  color:white;
+  border:1px solid rgb(4, 0, 255);
+  /* height: 50px; */
+ 
+  border-radius: 7px;
+  background-color: red ;
+  border: 0px solid green;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-weight: bold;
+}
