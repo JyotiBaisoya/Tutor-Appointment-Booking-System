@@ -61,6 +61,7 @@ userRoute.post("/user/login", async (req, res) => {
           token: token,
           username: userData[0].name,
           userID: userData[0]._id,
+          role: userData[0].role,
         });
       } else {
         res.status(400);
