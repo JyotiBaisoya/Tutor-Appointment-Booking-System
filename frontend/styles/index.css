@@ -2,28 +2,20 @@
     display:none;
 }
 
-
 #logo {
    
   width: 75px;
   height: 40px;
   border-radius: 22px;
 }
-/* #nav>div:nth-child(1){
- border:0px solid black;
- width:50%;
 
-} */
 #nav {
   display: flex;
   justify-content: space-between;
   /* background-color: #dedede; */
   border: 0px solid black;
   width: 90%;
-/* position: sticky;
-top:0%;
-z-index: 2; */
-  margin: auto;
+margin: auto;
   padding: 13px;
 }
 #nav>div:nth-child(2){
@@ -39,10 +31,22 @@ body {
 }
 #navbtnDiv {
     border:0px solid red;
-    width:30%
+    width:40%;
+ color:white;
 }
+#navbtnDiv a{
+    border:0px solid green;
+    color:white;
+    text-decoration: none;
+}
+/* #navbtnDiv>a{
+border:1px solid green;
+display:inline-block;
+} */
 #navBtn {
   width: 80%;
+  color:white;
+  border:1px solid rgb(4, 0, 255);
   /* height: 50px; */
  
   border-radius: 7px;
