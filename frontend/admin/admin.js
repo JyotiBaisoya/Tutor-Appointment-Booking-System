@@ -1,4 +1,5 @@
 let show=document.getElementById("after-nav-col-1");
+let donotshow = document.getElementById("after-nav-col-2")
 
 let role = localStorage.getItem("role")
 let token = localStorage.getItem("token")
@@ -17,20 +18,19 @@ if(role=="admin"){
           <a href="./addteacher.html"><h2>Add Teacher</h2></a>    
       </div>
       <div class="row">
-          <a href=""> <h2>Remove Teacher</h2></a>
+          <a href="./remove.html"> <h2>Remove Teacher</h2></a>
   `
   
 }else if(role=="tutor"){
   show.innerHTML=
-` <div class="row">
-        <a><h2>Dashboard</h2></a>
-    </div>
+` 
    
    <div class="row">
-    <a href="./appointment.html"> <h2>Show Appointments</h2></a>   
+    <a href="./teacherappointment.html"> <h2>Show Appointments</h2></a>   
     </div>
    
 `
+donotshow.innerHTML=""
 
 }
 
