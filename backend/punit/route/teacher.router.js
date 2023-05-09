@@ -43,24 +43,24 @@ teacherRouter.post("/addteacher", async (req, res) => {
   }
 });
 
-teacherRouter.patch("/bookSlot", async (req, res) => {
-  let teacherID = req.body.teacherID;
-  let studentID = req.body.studentID;
-  let date = req.body.date;
-  let time = req.body.time;
-  let teacherData = await TeacherModel.find({ _id: teacherID });
-  if (teacherData.length > 0) {
-    let obj = { studentID, date, time };
-    await TeacherModel.findByIdAndUpdate(
-      { _id: teacherID },
-      { $push: { slots: obj } }
-    );
+// teacherRouter.patch("/bookSlot", async (req, res) => {
+//   let teacherID = req.body.teacherID;
+//   let studentID = req.body.studentID;
+//   let date = req.body.date;
+//   let time = req.body.time;
+//   let teacherData = await TeacherModel.find({ _id: teacherID });
+//   if (teacherData.length > 0) {
+//     let obj = { studentID, date, time };
+//     await TeacherModel.findByIdAndUpdate(
+//       { _id: teacherID },
+//       { $push: { slots: obj } }
+//     );
 
-    res.send("updated slots");
-  } else {
-    res.send("something went wrong");
-  }
-});
+//     res.send("updated slots");
+//   } else {
+//     res.send("something went wrong");
+//   }
+// });
 
 teacherRouter.delete("/delete", async (req, res) => {
   try {

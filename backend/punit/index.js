@@ -7,6 +7,7 @@ const { connection } = require("./config/config");
 const { userRoute } = require("./route/user.route");
 const { authenticate } = require("./middleware/authenticate.middleware");
 const { teacherRouter } = require("./route/teacher.router");
+const { slotRoute } = require("./route/slot.route");
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.get("/", (req, res) => {
 app.use(userRoute);
 app.use(authenticate);
 app.use("/teacher", teacherRouter);
+app.use(slotRoute);
 
 app.listen(port, async () => {
   try {
