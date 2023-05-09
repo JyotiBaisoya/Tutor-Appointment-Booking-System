@@ -1,6 +1,7 @@
 let show=document.getElementById("after-nav-col-1");
 
 let role = localStorage.getItem("role")
+let token = localStorage.getItem("token")
 if(role=="admin"){
   show.innerHTML=
   `
@@ -46,7 +47,7 @@ async function getData() {
               headers: {
                   "Content-Type": "application/json",
                   
-                  
+                  "Authorization":token
               },
               
           })
@@ -72,13 +73,13 @@ function showTeacher(Data){
           <h4>${item._id}</h4>
         </td>
         <td>
-          <h4>${item.name}</h4>
+          <h4>${item.teacherName}</h4>
         </td>
         <td>
           <h4>${item.experience}</h4>
         </td>
         <td>
-          <h4>${item.qualification}</h4>
+          <h4>${item.qualifications}</h4>
         </td>
         
       </tr>
@@ -92,7 +93,7 @@ function searchteacher(){
     let q=document.querySelector(".searchteacher").value;
     
     let newdata=Dat.filter(function(elem){
-        return elem.name.toLowerCase().includes(q.toLocaleLowerCase());
+        return elem.teacherName.toLowerCase().includes(q.toLocaleLowerCase());
     });
   console.log(newdata)
     showTeacher(newdata);
