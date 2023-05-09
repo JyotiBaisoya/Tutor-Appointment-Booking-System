@@ -41,5 +41,17 @@ slotRoute.get("/studentSlots/:id", async (req, res) => {
     res.send("something went wrong");
   }
 });
+slotRoute.patch("/update/:id", async (req, res) => {
+  let payload = req.body
+  try {
+    let updateid = req.params.id;
+    let updateData = await slotModel.findByIdAndUpdate({_id:updateid },payload);
+   res.send("status updates")
+  } catch (error) {
+    res.send("something went wrong");
+  }
+});
+
+
 
 module.exports = { slotRoute };
