@@ -187,3 +187,65 @@ form {
   #srch{
     color:black
   }
+  
+#hamburger,#hamBtn{
+  display:none;
+}
+
+#logo {
+ 
+width: 75px;
+height: 40px;
+border-radius: 22px;
+}
+
+#nav {
+display: flex;
+justify-content: space-between;
+/* background-color: #dedede; */
+border: 0px solid black;
+width: 100%;
+margin: auto;
+padding: 13px;
+background-color: rgb(52,91,111);
+}
+#nav>div:nth-child(2){
+  display: flex;
+  justify-content: space-evenly;
+  gap:20px;
+}
+body {
+/* width: 90%; */
+border: 0px solid red;
+margin: auto;
+font-family: sans-serif;
+}
+#navbtnDiv {
+  border:0px solid red;
+  width:40%;
+color:white;
+}
+#navbtnDiv a{
+  border:0px solid green;
+  color:white;
+  text-decoration: none;
+}
+/* #navbtnDiv>a{
+border:1px solid green;
+display:inline-block;
+} */
+#navBtn {
+width: 80%;
+color:white;
+border:1px solid rgb(4, 0, 255);
+/* height: 50px; */
+
+border-radius: 7px;
+background-color: #f39c12 ;
+border: 0px solid green;
+color: white;
+font-size: 14px;
+line-height: 18px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+font-weight: bold;
+}
