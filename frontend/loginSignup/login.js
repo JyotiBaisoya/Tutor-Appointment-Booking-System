@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
   login(payload);
 });
 async function login(payload) {
-  const fetchedData = await fetch("http://localhost:4500/user/login", {
+  const fetchedData = await fetch("https://alert-lime-bracelet.cyclic.app/user/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -24,12 +24,20 @@ async function login(payload) {
       showConfirmButton: false,
       timer: 2000,
     });
-    localStorage.setItem("userID", data.userID);
     localStorage.setItem("username", data.username);
     localStorage.setItem("token", data.token);
-    setTimeout(() => {
-      window.location.href = "../index.html";
-    }, "2000");
+    localStorage.setItem("role", data.role);
+    if (data.role == "student") {
+      localStorage.setItem("studentID", data.userID);
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, "2000");
+    } else {
+      setTimeout(() => {
+        localStorage.setItem("teacherEmailID", data.email);
+        window.location.href = "../admin/admin.html";
+      }, "2000");
+    }
   } else {
     Swal.fire("Wrong Credentials ❌");
   }

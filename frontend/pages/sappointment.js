@@ -1,12 +1,13 @@
-let token = localStorage.getItem("token")
 
+let id = localStorage.getItem("studentID")
 let Dat ;
+let token = localStorage.getItem("token")
 async function getData() {
  
   
  
       try {
-          let res = await fetch("https://alert-lime-bracelet.cyclic.app/allSlots", {
+          let res = await fetch(`https://alert-lime-bracelet.cyclic.app/studentSlots/${id}`, {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",
@@ -30,7 +31,7 @@ getData();
 
 
 function showTeacher(Data){
-   let slots = Data.map((item)=>{
+   let teachers = Data.map((item)=>{
       return `
       <tr>
         <td>
@@ -49,10 +50,19 @@ function showTeacher(Data){
         <h4>${item.status}</h4>
       </td>
         
-        
       </tr>
       `
    })
 
-   document.getElementById("teachers").innerHTML=slots.join(" ")
+   document.getElementById("teachers").innerHTML=teachers.join(" ")
+}
+
+function searchteacher(){
+    let q=document.querySelector(".searchteacher").value;
+    
+    let newdata=Dat.filter(function(elem){
+        return elem.teacherName.toLowerCase().includes(q.toLocaleLowerCase());
+    });
+  console.log(newdata)
+    showTeacher(newdata);
 }

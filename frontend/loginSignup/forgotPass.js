@@ -20,7 +20,7 @@ submitButton.addEventListener("click", (e) => {
 // checking email and sending otp
 
 async function getOTP(email) {
-  let fetchOTP = await fetch("http://localhost:4500/otp", {
+  let fetchOTP = await fetch("https://alert-lime-bracelet.cyclic.app/otp", {
     method: "POST",
     headers: {
       "Content-type": "application/json",

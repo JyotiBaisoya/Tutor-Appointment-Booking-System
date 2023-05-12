@@ -1,6 +1,8 @@
 let show=document.getElementById("after-nav-col-1");
+let donotshow = document.getElementById("after-nav-col-2")
 
 let role = localStorage.getItem("role")
+let token = localStorage.getItem("token")
 if(role=="admin"){
   show.innerHTML=
   `
@@ -16,20 +18,19 @@ if(role=="admin"){
           <a href="./addteacher.html"><h2>Add Teacher</h2></a>    
       </div>
       <div class="row">
-          <a href=""> <h2>Remove Teacher</h2></a>
+          <a href="./remove.html"> <h2>Remove Teacher</h2></a>
   `
   
 }else if(role=="tutor"){
   show.innerHTML=
-` <div class="row">
-        <a><h2>Dashboard</h2></a>
-    </div>
+` 
    
    <div class="row">
-    <a href="./appointment.html"> <h2>Show Appointments</h2></a>   
+    <a href="./teacherappointment.html"> <h2>Show Appointments</h2></a>   
     </div>
    
 `
+donotshow.innerHTML=""
 
 }
 
@@ -41,12 +42,12 @@ async function getData() {
   
  
       try {
-          let res = await fetch("http://localhost:4500/teacher/getall", {
+          let res = await fetch("https://alert-lime-bracelet.cyclic.app/teacher/allteacher", {
               method: "GET",
               headers: {
                   "Content-Type": "application/json",
                   
-                  
+                  "Authorization":token
               },
               
           })
@@ -72,13 +73,13 @@ function showTeacher(Data){
           <h4>${item._id}</h4>
         </td>
         <td>
-          <h4>${item.name}</h4>
+          <h4>${item.teacherName}</h4>
         </td>
         <td>
           <h4>${item.experience}</h4>
         </td>
         <td>
-          <h4>${item.qualification}</h4>
+          <h4>${item.qualifications}</h4>
         </td>
         
       </tr>
@@ -92,7 +93,7 @@ function searchteacher(){
     let q=document.querySelector(".searchteacher").value;
     
     let newdata=Dat.filter(function(elem){
-        return elem.name.toLowerCase().includes(q.toLocaleLowerCase());
+        return elem.teacherName.toLowerCase().includes(q.toLocaleLowerCase());
     });
   console.log(newdata)
     showTeacher(newdata);
