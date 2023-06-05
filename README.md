@@ -1,4 +1,4 @@
-# skinny-letters-4973
+# Tutor-Appointment-Booking-System
 
 ![learnmate logo](https://github.com/JyotiBaisoya/skinny-letters-4973/assets/112819979/7477b5a7-aae7-4c33-9c9f-b61b4a241c81)
 
@@ -72,7 +72,7 @@ To install the Veterinary Appointment Booking System, follow these steps:
 
 1. Clone the repository:
 ```
-https://github.com/JyotiBaisoya/skinny-letters-4973
+https://github.com/JyotiBaisoya/Tutor-Appointment-Booking-System
 ```
 
 2. Install the dependencies:
